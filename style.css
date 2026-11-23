@@ -8,6 +8,11 @@ body, html {
    overflow: hidden;
 }
 
+.main {
+   width: 100%;
+   height: 100%;
+}
+
 .topbar {
    width: 100%;
    height: 10%;
@@ -16,8 +21,97 @@ body, html {
    display: flex;
 }
 
-.topbar h1 {
-   position: absolute;
+.logo {
    margin-top: 0;
    padding-top: 0;
+}
+
+.topbarbuttons {
+   position: absolute;
+   margin-top: 1%;
+   right: 1%;
+}
+
+.topbarbuttonstyle {
+   background-color: rgb(82, 93, 139);
+   border: 3px solid black;
+   box-shadow: 3px 3px rgb(82, 93, 139);
+   font-size: 100%;
+   font-family: "Comic Sans MS";
+   font-weight: bold;
+   user-select: none;
+}
+
+.welcome {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.loginmenu {
+   width: 20%;
+   height: 60%;
+   margin-top: 10%;
+   margin-left: 40%;
+   position: absolute;
+   z-index: 2;
+   background-color: white;
+   border-radius: 15px;
+}
+
+.logininput {
+   margin-top: 15%;
+}
+
+.loginmenuinputstyle {
+   margin-left: 10%;
+   margin-top: 3%;
+}
+
+.loginmenuinputstyle input {
+   width: 50%;
+   margin: 1%;
+   align-self: center;
+   font-family: "Comic Sans MS";
+   border: 3px solid rgb(82, 93, 139);
+   user-select: none;
+}
+
+.loginmenuinputstyle p {
+   width: 20px;
+   user-select: none;
+}
+
+.closebutton button {
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   border: none;
+   background-color: none;
+   font-family: "Comic Sans MS";
+   font-size: 25px;
+   border-radius: 5px;
+   user-select: none;
+}
+
+.loginbuttonstyle {
+   margin-top: 30px;
+   margin-left: 70%;
+   user-select: none;
+}
+
+.showpasswordeye {
+   margin-top: 8px;
+   position: absolute;
+}
+
+.otherloginstuff {
+   width: 100%;
+   height: 50%;
+   margin-top: 20%;
+   border-top: 3px dotted black;
+}
+
+.hidden {
+   display: none !important;
 }
