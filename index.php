@@ -3,6 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <link rel="stylesheet" href="style.css">
+   <link rel="script" href="script.js">
    <title>Strona</title>
 </head>
 <body>
@@ -43,27 +44,5 @@
          </div>
       </div>
    </div>
-
-   <script>
-      function openloginmenu()
-         {
-         if(document.getElementById("loginmenuid").classList.contains("hidden"))
-            {
-            loginmenuid.classList.remove("hidden");
-            }
-         else
-            {
-            loginmenuid.classList.add("hidden");
-            }
-         }
-      function showpassword()
-         {
-         document.getElementById("passwordid").type = "text";
-         }
-      function hidepassword()
-         {
-         document.getElementById("passwordid").type = "password";
-         }
-   </script>
 </body>
 </html>
