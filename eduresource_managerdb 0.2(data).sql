@@ -22,6 +22,8 @@ CREATE TABLE `uzytkownicy` (
 	UNIQUE KEY `uq_uzytkownicy_email` (`Email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+czemó muj kod nje dziala
+
 CREATE TABLE `zasoby_szkolne` (
 	`ID` INT(11) NOT NULL AUTO_INCREMENT,
 	`Nazwa` VARCHAR(150) NOT NULL,
