@@ -22,8 +22,6 @@ CREATE TABLE `uzytkownicy` (
 	UNIQUE KEY `uq_uzytkownicy_email` (`Email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-czemó muj kod nje dziala
-
 CREATE TABLE `zasoby_szkolne` (
 	`ID` INT(11) NOT NULL AUTO_INCREMENT,
 	`Nazwa` VARCHAR(150) NOT NULL,
@@ -170,5 +168,13 @@ SELECT
 	'projektor',
 	2, 2, 7,
 	'sprawny', 'dostepny';
+
+INSERT IGNORE INTO `uzytkownicy`
+	(`Imie`, `Nazwisko`, `Stanowisko`, `Dostep`, `Login`, `Email`, `Haslo`)
+VALUES
+	('Admin', 'Systemu', 'Administrator', 9, 'admin', 'admin@eduresource.local',
+	 '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi'),
+	('Jan', 'Uczen', 'Uczen', 1, 'jan', 'jan@eduresource.local',
+	 '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi');
 
 COMMIT;

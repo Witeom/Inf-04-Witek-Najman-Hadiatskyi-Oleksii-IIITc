@@ -1,12 +1,13 @@
 function openloginmenu()
    {
-   if(document.getElementById("loginmenuid").classList.contains("hidden"))
+   var menu = document.getElementById("loginmenuid");
+   if(menu.classList.contains("hidden"))
       {
-      loginmenuid.classList.remove("hidden");
+      menu.classList.remove("hidden");
       }
    else
       {
-      loginmenuid.classList.add("hidden");
+      menu.classList.add("hidden");
       }
    }
 function showpassword()
